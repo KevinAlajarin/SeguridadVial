@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+section {
+    height: 88vh;
+}
+
+header {
+    height: 10vh;
+}
+
+.ahorcado-title {
+    text-align: center;
+}
+
+#rules {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#game {
+    margin: 20px auto;
+    width: 300px;
+}
+
+#word {
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+#letters {
+    margin-bottom: 20px;
+}
+
+.letter {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.letter.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#note {
+    margin: 1px auto;
+    width: 20%;
+    background-color: #fff;
+    padding: 1px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#play-again {
+    display: block;
+    margin: auto;
+    place-self: center;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    }
+    
+
+@media (max-width: 600px) {
+    .score-board {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+    }
+
+    .game-board {
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(4, 150px);
+    }
+}
+
+footer{
+    width: 100%;
+    background-color: #2B3035;
+    color: white;
+    text-align: center;
+}

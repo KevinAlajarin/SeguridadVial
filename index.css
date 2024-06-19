@@ -1,0 +1,146 @@
+body, html {
+    overflow-y: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    background-color: #2B3035;
+}
+
+.card-info {
+    background-color: #FFFFFF;
+}
+
+.card-img-top {
+    width: 70%;
+    margin: auto;
+}
+
+.pad-in {
+    padding: 5% 15%;
+}
+
+.mb {
+    margin-bottom: 1em;
+}
+
+.customize-card {
+    min-height: 100%;
+}
+
+
+.tl {
+    text-align: center;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner-img img {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.uade-logo {
+    width: 30%;
+}
+
+footer{
+    width: 100%;
+    background-color: #2B3035;
+    color: white;
+}
+
+.game-section {
+    height: 100vh;
+}
+
+nav {
+    border-bottom: solid black 1px;
+}
+
+header {
+    height: 10vh;
+}
+
+.vialmente-option {
+    min-height: 210px;
+    max-height: 210px;
+}
+
+#vialmente-answers-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#choice-game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    height: 87vh;
+}
+
+.vialmente-card {
+    border: solid 2px;
+    border-color: #F2C61E;
+    margin-right: 15px;
+}
+
+.vialmente-card:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.vialmente-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.vialmente-modal-content {
+    background-color: #2B3035;
+    font-style: italic;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    width: 35%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-palette-dark{
+    background-color: #2B3035;
+    color: white;
+    padding: 5px;
+}
+
+.color-palette-light{
+    background-color: #F2C61E;
+    padding: 5px;
+}
+
+.list-identidad-visual {
+    padding-bottom: 10px;
+}
