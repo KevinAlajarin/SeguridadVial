@@ -127,16 +127,17 @@ header {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
     text-align: center;
     color: white;
     font-size: 24px;
     width: 35%;
-    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 40vh;
+    width: 35vh;
 }
+
 
 .color-palette-dark{
     background-color: #2B3035;
@@ -166,4 +167,45 @@ header {
     margin-top: 5px;
     border-radius: 50%;
     border: solid 1px #F2C61E;
+}
+
+.vialmente-counter-container {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.vialmente-modal-explanation h3, p{
+    font-size: 2vh;
+}
+
+.vialmente-modal-explanation p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.vialmente-modal-explanation img {
+    margin: auto;
+    display: flex;
+}
+
+.final-message-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.final-score {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #4caf50;
+}
+
+.final-message {
+    font-style: italic;
+    color: #333;
+    margin-top: 10px;
 }
