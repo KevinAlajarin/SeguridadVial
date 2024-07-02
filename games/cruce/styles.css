@@ -113,6 +113,46 @@ button:hover {
     text-align: center;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#instructions-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#instructions-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+#instructions-popup button {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+
 .hidden {
     display: none;
 }

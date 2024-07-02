@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const endGameModal = document.getElementById('end-game-modal');
     const endGameMessage = document.getElementById('end-game-message');
     const restartButton = document.getElementById('restart-button');
+    const instructionsButton = document.getElementById('instructions-button');
+    const instructionsPopup = document.getElementById('instructions-popup');
+    const closePopupButton = document.getElementById('close-popup-button');
 
     let isGreenForCars = false;
     let timeLeft = 3;
@@ -17,6 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
     let isYellowLight = false;
     let gameTime = 60;
     const requiredCrosses = 10;
+
+    // Mostrar instrucciones
+    instructionsButton.addEventListener('click', () => {
+        instructionsPopup.classList.remove('hidden');
+    });
+
+    // Cerrar el popup de instrucciones
+    closePopupButton.addEventListener('click', () => {
+        instructionsPopup.classList.add('hidden');
+    });
 
     // Cambiar el color del semáforo para autos y peatones
     function toggleTrafficLights() {
