@@ -74,6 +74,10 @@ header {
 .vialmente-option {
     min-height: 210px;
     max-height: 210px;
+    border: solid 2px;
+    border-color: #F2C61E;
+    min-width: 225px;
+    max-width: 225px;
 }
 
 #vialmente-answers-container {
@@ -87,13 +91,17 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 2vh;
-    height: 87vh;
+    min-height: 87vh;
+    padding-bottom: 10px;
+}
+
+#question-container h2 {
+    padding: 0px 10px;
 }
 
 .vialmente-card {
-    border: solid 2px;
-    border-color: #F2C61E;
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .vialmente-card:hover {
@@ -143,4 +151,9 @@ header {
 
 .list-identidad-visual {
     padding-bottom: 10px;
+}
+
+.card-text a, .card-body a {
+    margin-bottom: 10px;
+    color: #F2C61E;
 }
