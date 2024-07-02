@@ -98,7 +98,7 @@ function checkAnswer(selected) {
     } else {
       const quizContainer = document.querySelector(".quiz-container");
       quizContainer.innerHTML = `<p class='text-center'>
-        Le diste a ${correctAnswers} de ${questions.length} preguntas.
+        Usted ha acertado ${correctAnswers} de ${questions.length} respuestas.
         </br></br>
         <button onClick="window.location.reload();">Volver a jugar</button>
         </p>`;
