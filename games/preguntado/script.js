@@ -18,7 +18,7 @@ const unorderQuestions = [
   },
   {
     question:
-      "“Cada usuario de la vía pública es responsable de una parte del tránsito.” ¿Es correcta éstapremisa?",
+      "“Cada usuario de la vía pública es responsable de una parte del tránsito.” ¿Es correcta ésta premisa?",
     image: "./assets/quiz3.png",
     choices: [
       "No, porque los que tienen responsabilidad son aquellos que conducen cualquier tipo de vehículo.",
