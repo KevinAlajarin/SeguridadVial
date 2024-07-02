@@ -1,12 +1,14 @@
-const questions = [
+const unorderQuestions = [
   {
     question:
       "¿Que color de luz de semaforo permite el avance de los vehiculos?",
+    image: "./assets/quiz1.png",
     choices: ["Rojo", "Amarillo", "Verde"],
     correct: 2,
   },
   {
     question: "¿A qué se denomina incidente de tránsito o incidente vial?",
+    image: "./assets/quiz2.png",
     choices: [
       "Hecho impredecible e inevitable en ocasión de circulación en la vía pública.",
       "Hecho que puede ser evitado, en el cual se produce daño a persona o cosa, en ocasión de circulación en la vía pública.",
@@ -17,6 +19,7 @@ const questions = [
   {
     question:
       "“Cada usuario de la vía pública es responsable de una parte del tránsito.” ¿Es correcta éstapremisa?",
+    image: "./assets/quiz3.png",
     choices: [
       "No, porque los que tienen responsabilidad son aquellos que conducen cualquier tipo de vehículo.",
       "Sí, porque se está obligado a no causar peligro ni entorpecer la circulación.",
@@ -25,6 +28,8 @@ const questions = [
     correct: 1,
   },
 ];
+
+const questions = unorderQuestions.sort(() => Math.random() - 0.5);
 
 let currentQuestion = 0;
 let correctAnswers = 0;
@@ -36,6 +41,9 @@ function startGame() {
     <h1>Preguntados</h1>
     <div class="question">
         <p id="question-text"></p>
+         <div class="text-center">
+            <img src="" id="question-img">
+        </div>
         <div class="choices">
             <button class="choice" onclick="checkAnswer(0)"></button>
             <button class="choice" onclick="checkAnswer(1)"></button>
@@ -46,10 +54,13 @@ function startGame() {
   `;
   showQuestion();
 }
-
+// ./assets/quiz1.png
 function showQuestion() {
   const questionText = document.getElementById("question-text");
+  const img = document.getElementById("question-img");
+
   questionText.textContent = questions[currentQuestion].question;
+  img.src = questions[currentQuestion].image;
 
   const choices = document.querySelectorAll(".choice");
   choices.forEach((choice, index) => {
