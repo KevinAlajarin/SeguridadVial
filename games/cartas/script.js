@@ -74,7 +74,7 @@ function flipCard() {
 
 function checkForMatch() {
     let isMatch = firstCard.dataset.name === secondCard.dataset.name;
-    // isMatch ? disableCards() : unflipCards();
+    isMatch ? disableCards() : unflipCards();
 }
 
 function disableCards() {
@@ -103,11 +103,6 @@ function unflipCards() {
         errors--;
         errorsElement.textContent = errors;
         
-        if (score >= 10) {
-            score -= 10;
-            scoreElement.textContent = score;
-        }
-
         if (errors <= 0) {
             defeatMessage.style.display = 'block';
             restartMessage.style.display = 'block';
@@ -129,10 +124,8 @@ function disableAllCards() {
 }
 
 function restartGame() {
-   
     restartMessage.style.display = 'none';
 
-    
     score = 0;
     errors = 10;
     matchedPairs = 0;
@@ -141,11 +134,9 @@ function restartGame() {
     victoryMessage.style.display = 'none';
     defeatMessage.style.display = 'none';
 
-    
     gameBoard.innerHTML = '';
     cardsArray.sort(() => 0.5 - Math.random());
     createBoard();
 }
 
 createBoard();
-
