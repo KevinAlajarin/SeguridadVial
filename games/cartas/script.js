@@ -146,4 +146,5 @@ function restartGame() {
     cardsArray.sort(() => 0.5 - Math.random());
     createBoard();
 }
+
 createBoard();
