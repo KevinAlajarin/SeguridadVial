@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,8 +20,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 20px;
-    padding-top: 80px;
-}
+    padding-top: 120px;
 
 .score-board {
     margin-bottom: 20px;
@@ -30,24 +29,27 @@ header {
     justify-content: center;
     width: 100%;
     text-align: center;
+    flex-wrap: wrap; 
 }
 
 .score, .attempts {
-    margin: 0 20px;
+    margin: 10px; 
 }
 
 .game-board {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, auto); 
     grid-gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
+    max-width: 400px; 
+    width: 100%;
 }
 
 .card {
-    width: 100px;
-    height: 150px;
+    width: 100%; 
+    padding-bottom: 150%;
     background-color: #333;
     border-radius: 10px;
     display: flex;
@@ -134,19 +136,24 @@ footer {
         font-size: 1.2em;
     }
 
+    .container {
+        padding-top: 140px; 
+    }
+
     .game-board {
-        grid-template-columns: repeat(2, 100px);
-        grid-template-rows: repeat(4, 150px);
+        max-width: 90%; 
     }
 }
+
 .card-description {
     text-align: center;
     margin-top: 10px;
     font-size: 0.8em;
     color: #555;
 }
+
 .fixed-size-img {
-    width: 100px;
+    width: 100%; 
     height: auto;
 }
 
