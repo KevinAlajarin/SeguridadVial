@@ -146,7 +146,7 @@ footer {
     color: #555;
 }
 .fixed-size-img {
-    width: 100px; /* Ancho deseado */
-    height: auto; /* Altura automática para mantener la proporción */
+    width: 100px;
+    height: auto;
 }
 
