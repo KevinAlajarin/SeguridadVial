@@ -157,3 +157,13 @@ header {
     margin-bottom: 10px;
     color: #F2C61E;
 }
+
+.card-title {
+    height: 3rem;
+}
+
+.customize-card img {
+    margin-top: 5px;
+    border-radius: 50%;
+    border: solid 1px #F2C61E;
+}
